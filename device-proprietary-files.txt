@@ -248,6 +248,13 @@ etc/diag/mdm/Connection_Issues_V6+DPL+UIM.cfg
 etc/diag/mdm/FIT_V16_1.cfg
 etc/diag/mdm/FIT_V16_2_volte_full_ip.cfg
 etc/diag/mdm/FIT_V16_3_audio.cfg
+bin/diag_qshrink4_daemon
+bin/PktRspTest
+bin/ramdump
+bin/rundiag
+bin/test_diag
+etc/diag/mdm/FIT_V15_audio.cfg
+etc/diag/mdm/FIT_V15.cfg
 etc/diag/mdm/sensors_qxdm.cfg
 etc/diag/mdm/voice-call-min-log.cfg
 etc/diag/sensors_qxdm.cfg
