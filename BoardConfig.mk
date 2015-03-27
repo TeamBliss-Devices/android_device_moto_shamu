@@ -191,6 +191,14 @@ BOARD_HARDWARE_CLASS := device/moto/shamu/cmhw
 # Block_Build
 Bliss_Build_Block:=1 
 
+# TWRP
+TW_THEME := portrait_hdpi
+TW_INCLUDE_L_CRYPTO := true
+BOARD_HAS_NO_REAL_SDCARD := true
+RECOVERY_GRAPHICS_USE_LINELENGTH := true
+TARGET_RECOVERY_PIXEL_FORMAT := "RGB_565"
+TW_SCREEN_BLANK_ON_BOOT := true
+
 # Blissful building options
 BLISSIFY := true
 BLISS_O3 := true
