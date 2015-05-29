@@ -147,6 +147,7 @@ BOARD_SEPOLICY_UNION += \
         property_contexts \
         qmux.te \
         radio.te \
+        recovery.te \
         rild.te \
         sensors.te \
         service.te \
@@ -182,6 +183,15 @@ EXTENDED_FONT_FOOTPRINT := true
 
 # CMHW
 BOARD_HARDWARE_CLASS := device/moto/shamu/cmhw
+
+# TWRP
+RECOVERY_VARIANT := twrp
+TW_THEME := portrait_hdpi
+TW_INCLUDE_L_CRYPTO := true
+BOARD_HAS_NO_REAL_SDCARD := true
+RECOVERY_GRAPHICS_USE_LINELENGTH := true
+TARGET_RECOVERY_PIXEL_FORMAT := "RGB_565"
+TW_SCREEN_BLANK_ON_BOOT := true
 
 -include vendor/motorola/shamu/BoardConfigVendor.mk
 
