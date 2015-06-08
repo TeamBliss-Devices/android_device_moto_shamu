@@ -1,0 +1,8 @@
+[
+  {
+    "remote": "github",
+    "repository": "imoseyon/leanKernel-shamu",
+    "target_path": "kernel/moto/shamu",
+    "revision": "lk-lp"
+  }
+]
