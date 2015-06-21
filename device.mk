@@ -125,6 +125,10 @@ PRODUCT_PACKAGES += atmel.fw.apq8084
 PRODUCT_PACKAGES += \
     qmi_motext_hook
 
+# DevicHandler
+PRODUCT_PACKAGES += \
+    DeviceHandler
+
 # Live Wallpapers
 PRODUCT_PACKAGES += \
     LiveWallpapersPicker \
