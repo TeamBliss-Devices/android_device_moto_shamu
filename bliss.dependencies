@@ -1,8 +1,8 @@
 [
   {
     "remote": "github",
-    "repository": "imoseyon/leanKernel-shamu",
+    "repository": "flar2/shamu",
     "target_path": "kernel/moto/shamu",
-    "revision": "lk-lp"
+    "revision": "lollipop-mr1"
   }
 ]
