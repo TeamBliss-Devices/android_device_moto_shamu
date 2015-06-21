@@ -13,20 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 package com.slim.device.settings;
 
 import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
-import android.content.IntentFilter;
-import android.hardware.Sensor;
-import android.hardware.SensorManager;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
-
-import java.util.Iterator;
 
 public class ScreenOffGestureSettings extends Activity {
 
@@ -37,6 +28,6 @@ public class ScreenOffGestureSettings extends Activity {
         getFragmentManager().beginTransaction().replace(android.R.id.content,
                 new ScreenOffGesture()).commit();
         getActionBar().setDisplayHomeAsUpEnabled(true);
-
     }
+
 }

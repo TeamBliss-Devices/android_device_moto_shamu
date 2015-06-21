@@ -28,38 +28,32 @@
             android:title="@string/gestures_title" >
 
             <Preference
-                android:key="gesture_swipe_down"
-                android:title="@string/swipe_down_title"
+                android:key="gesture_down"
+                android:title="@string/gesture_down_title"
                 android:persistent="false"
                 android:dependency="enable_gestures" />
 
             <Preference
-                android:key="gesture_swipe_left"
-                android:title="@string/swipe_left_title"
+                android:key="gesture_left"
+                android:title="@string/gesture_left_title"
                 android:persistent="false"
                 android:dependency="enable_gestures" />
 
             <Preference
-                android:key="gesture_swipe_right"
-                android:title="@string/swipe_right_title"
+                android:key="gesture_right"
+                android:title="@string/gesture_right_title"
                 android:persistent="false"
                 android:dependency="enable_gestures" />
 
             <Preference
-                android:key="gesture_swipe_up"
-                android:title="@string/swipe_up_title"
+                android:key="gesture_up"
+                android:title="@string/gesture_up_title"
                 android:persistent="false"
                 android:dependency="enable_gestures" />
 
             <Preference
                 android:key="gesture_double_tap"
-                android:title="@string/double_tap_title"
-                android:persistent="false"
-                android:dependency="enable_gestures" />
-
-           <Preference
-                android:key="gesture_camera"
-                android:title="@string/camera_title"
+                android:title="@string/gesture_double_tap_title"
                 android:persistent="false"
                 android:dependency="enable_gestures" />
 

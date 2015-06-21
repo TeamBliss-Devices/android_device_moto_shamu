@@ -146,7 +146,8 @@ public class ShortcutPickerHelper {
         intent.putExtra(Intent.EXTRA_SHORTCUT_NAME, data.getStringExtra(
                 Intent.EXTRA_SHORTCUT_NAME));
         String appUri = intent.toUri(0);
-        appUri = appUri.replaceAll("com.android.contacts.action.QUICK_CONTACT", Intent.ACTION_VIEW);
+        appUri = appUri.replaceAll("com.android.contacts.action.QUICK_CONTACT",
+                "android.intent.action.VIEW");
 
         // Check if icon is present
         Bitmap bmp = null;
