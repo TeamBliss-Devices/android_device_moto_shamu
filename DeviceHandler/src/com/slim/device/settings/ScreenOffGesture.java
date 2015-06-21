@@ -42,7 +42,7 @@ import com.android.internal.util.bliss.ActionConstants;
 import com.android.internal.util.bliss.DeviceUtils;
 import com.android.internal.util.bliss.DeviceUtils.FilteredDeviceFeaturesArray;
 
-import com.slim.device.KernelControl;
+import com.slim.device.WakeGestureProcessor;
 import com.slim.device.R;
 import com.slim.device.util.ShortcutPickerHelper;
 
@@ -133,13 +133,8 @@ public class ScreenOffGesture extends PreferenceFragment implements
         mGestureDoubleTap = (Preference) prefs.findPreference(PREF_GESTURE_DOUBLE_TAP);
 
 
-        if (KernelControl.isUpSupported()) {
-            setupOrUpdatePreference(mGestureUp, mScreenOffGestureSharedPreferences
-                    .getString(PREF_GESTURE_UP, ActionConstants.ACTION_TORCH));
-        } else {
-            prefs.removePreference(mGestureUp);
-        }
-
+        setupOrUpdatePreference(mGestureUp, mScreenOffGestureSharedPreferences
+                .getString(PREF_GESTURE_UP, ActionConstants.ACTION_TORCH));
         setupOrUpdatePreference(mGestureDown, mScreenOffGestureSharedPreferences
                 .getString(PREF_GESTURE_DOWN, ActionConstants.ACTION_VIB_SILENT));
         setupOrUpdatePreference(mGestureLeft, mScreenOffGestureSharedPreferences
@@ -221,7 +216,6 @@ public class ScreenOffGesture extends PreferenceFragment implements
         if (preference == mEnableGestures) {
             mScreenOffGestureSharedPreferences.edit()
                     .putBoolean(PREF_GESTURE_ENABLE, (Boolean) newValue).commit();
-            KernelControl.enableGestures((Boolean) newValue);
             return true;
         }
         return false;
@@ -243,7 +237,6 @@ public class ScreenOffGesture extends PreferenceFragment implements
         editor.putString(PREF_GESTURE_DOUBLE_TAP,
                 ActionConstants.ACTION_WAKE_DEVICE).commit();
         editor.commit();
-        KernelControl.enableGestures(true);
         reloadSettings();
     }
 

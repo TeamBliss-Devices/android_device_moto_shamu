@@ -23,7 +23,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 
-import com.slim.device.KernelControl;
+import com.slim.device.WakeGestureProcessor;
 import com.slim.device.settings.ScreenOffGesture;
 
 import java.io.File;
@@ -34,14 +34,13 @@ public class BootReceiver extends BroadcastReceiver {
     public void onReceive(final Context context, final Intent intent) {
         if (intent.getAction().equals(Intent.ACTION_BOOT_COMPLETED)) {
             // Disable touchscreen gesture settings if needed
-            if (!KernelControl.hasTouchscreenGestures()) {
+            if (!WakeGestureProcessor.supportsWakeGestures()) {
                 disableComponent(context, ScreenOffGesture.class.getName());
             } else {
                 SharedPreferences screenOffGestureSharedPreferences = context.getSharedPreferences(
                         ScreenOffGesture.GESTURE_SETTINGS, Activity.MODE_PRIVATE);
-                KernelControl.enableGestures(
                         screenOffGestureSharedPreferences.getBoolean(
-                        ScreenOffGesture.PREF_GESTURE_ENABLE, true));
+                        ScreenOffGesture.PREF_GESTURE_ENABLE, true);
             }
         }
     }
