@@ -1,8 +1,8 @@
 [
   {
     "remote": "github",
-    "repository": "flar2/shamu",
+    "repository": "DespairFactor/N6",
     "target_path": "kernel/moto/shamu",
-    "revision": "lollipop-mr1"
+    "revision": "master"
   }
 ]
