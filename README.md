@@ -19,7 +19,7 @@
 
 ## Device Picture
 
-![Nexus 6](http://http://wiki.cyanogenmod.org/images/e/e7/Google_Nexus_6.png "Nexus 6")
+![Nexus 6](http://wiki.cyanogenmod.org/images/e/e7/Google_Nexus_6.png "Nexus 6")
 
 ## Copyright
 
