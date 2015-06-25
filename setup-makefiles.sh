@@ -1,8 +1,13 @@
 #!/bin/bash
 
-OUTDIR=vendor/$VENDOR/$DEVICE
-MAKEFILE=../../../$OUTDIR/$DEVICE-vendor-blobs.mk
-VENDOR_MAKEFILE=../../../$OUTDIR/device-vendor.mk
+host=`whoami`
+SOURCE=$(pwd)
+BASE=$SOURCE/moto/shamu
+VENDOR=moto
+DEVICE=shamu
+OUTDIR=$VENDOR/$DEVICE
+MAKEFILE=$SOURCE/$OUTDIR/$DEVICE-vendor-blobs.mk
+VENDOR_MAKEFILE=$SOURCE/$OUTDIR/$DEVICE-vendor.mk
 YEAR=`date +"%Y"`
 
 (cat << EOF) > $MAKEFILE
