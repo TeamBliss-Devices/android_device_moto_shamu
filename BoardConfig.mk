@@ -191,6 +191,9 @@ BOARD_HARDWARE_CLASS := device/moto/shamu/cmhw
 # Block_Build
 Bliss_Build_Block:=1 
 
+# Healthd
+HEALTHD_ENABLE_TRICOLOR_LED := true
+
 # TWRP
 TW_THEME := portrait_hdpi
 TW_INCLUDE_L_CRYPTO := true
