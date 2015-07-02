@@ -249,6 +249,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.rcs.supported=0
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.data.iwlan.enable=true \
+    persist.radio.ignore_ims_wlan=1 \
+    persist.radio.data_con_rprt=1
+
 #Reduce IMS logging
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.ims.disableDebugLogs=1
