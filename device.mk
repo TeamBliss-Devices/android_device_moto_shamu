@@ -125,8 +125,8 @@ PRODUCT_PACKAGES += \
     qmi_motext_hook
 
 # DevicHandler
-PRODUCT_PACKAGES += \
-    DeviceHandler
+#PRODUCT_PACKAGES += \
+#    DeviceHandler
 
 # Live Wallpapers
 PRODUCT_PACKAGES += \
