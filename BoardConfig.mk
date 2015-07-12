@@ -213,8 +213,5 @@ TARGET_GCC_VERSION_EXP := $(TARGET_TC_ROM)
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := $(TARGET_TC_KERNEL)
 TARGET_ENABLE_UKM := true
 
-#Bliss Audio Mod
-BLISS_AUDIO_MOD :=viper
-
 #SaberMod
 -include vendor/bliss/config/sm.mk
