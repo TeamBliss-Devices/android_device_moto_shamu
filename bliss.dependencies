@@ -1,8 +1,8 @@
 [
   {
     "remote": "github",
-    "repository": "DespairFactor/N6",
+    "repository": "BenzoRom/android_kernel_motorola_shamu_benzoCore",
     "target_path": "kernel/moto/shamu",
-    "revision": "master"
+    "revision": "lollipop"
   }
 ]
