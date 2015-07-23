@@ -23,7 +23,7 @@ TARGET_CPU_VARIANT := krait
 TARGET_NO_BOOTLOADER := true
 
 # Inline kernel building
-TARGET_KERNEL_CONFIG := despair_defconfig
+TARGET_KERNEL_CONFIG := blissful_shamu_defconfig
 TARGET_KERNEL_SOURCE := kernel/moto/shamu
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 
@@ -208,7 +208,7 @@ Link_Time_Optimizations := true
 TARGET_USE_ION_COMPAT := true
 TARGET_USE_KRAIT_PLD_SET := true
 TARGET_TC_ROM := 4.9-linaro
-TARGET_TC_KERNEL := 4.9-linaro
+TARGET_TC_KERNEL := 6.0-linaro
 TARGET_GCC_VERSION_EXP := $(TARGET_TC_ROM)
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := $(TARGET_TC_KERNEL)
 TARGET_ENABLE_UKM := true

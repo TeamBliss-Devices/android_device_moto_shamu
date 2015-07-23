@@ -1,8 +1,8 @@
 [
   {
     "remote": "github",
-    "repository": "DespairFactor/N6",
+    "repository": "TeamBliss-Devices/blissful_shamu_kernel",
     "target_path": "kernel/moto/shamu",
-    "revision": "master"
+    "revision": "lp5.1"
   }
 ]
