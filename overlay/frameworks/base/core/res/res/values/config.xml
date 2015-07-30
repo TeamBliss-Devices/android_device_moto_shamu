@@ -340,5 +340,5 @@
 
     <!-- Device will display option to wake only if proximity sensor is uncovered -->
     <bool name="config_proximityCheckOnWake">true</bool>
-    <integer name="config_proximityCheckTimeout">250</integer>
+    <integer name="config_proximityCheckTimeout">100</integer>
 </resources>
