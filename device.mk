@@ -35,7 +35,10 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     device/moto/shamu/audio_policy.conf:system/etc/audio_policy.conf \
-    device/moto/shamu/audio_effects.conf:system/vendor/etc/audio_effects.conf
+	device/moto/shamu/audio_policy.conf:system/vendor/etc/audio_policy.conf \
+    device/moto/shamu/audio_effects.conf:system/vendor/etc/audio_effects.conf \
+    device/moto/shamu/audio_effects.conf:system/etc/audio_effects.conf
+	
 
 PRODUCT_COPY_FILES += \
     device/moto/shamu/media_profiles.xml:system/etc/media_profiles.xml \
@@ -179,21 +182,6 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     libqcomvoiceprocessingdescriptors
 	
-# AUX Fix
-PRODUCT_COPY_FILES += \
-    device/moto/shamu/v4a/lib/soundfx/libaudiopreprocessing.so:system/lib/soundfx/libaudiopreprocessing.so \
-	device/moto/shamu/v4a/lib/soundfx/libbundlewrapper.so:system/lib/soundfx/libbundlewrapper.so \
-	device/moto/shamu/v4a/lib/soundfx/libdownmix.so:system/lib/soundfx/libdownmix.so \
-	device/moto/shamu/v4a/lib/soundfx/libeffectproxy.so:system/lib/soundfx/libeffectproxy.so \
-	device/moto/shamu/v4a/lib/soundfx/libfmas.so:system/lib/soundfx/libfmas.so \
-	device/moto/shamu/v4a/lib/soundfx/libldnhncr.so:system/lib/soundfx/libldnhncr.so \
-	device/moto/shamu/v4a/lib/soundfx/libqcomvoiceprocessing.so:system/lib/soundfx/libqcomvoiceprocessing.so \
-	device/moto/shamu/v4a/lib/soundfx/libreverbwrapper.so:system/lib/soundfx/libreverbwrapper.so \
-	device/moto/shamu/v4a/lib/soundfx/libv4a_fx_ics.so:system/lib/soundfx/libv4a_fx_ics.so \
-	device/moto/shamu/v4a/lib/soundfx/libvisualizer.so:system/lib/soundfx/libvisualizer.so \
-	device/moto/shamu/v4a/vendor/etc/audio_policy.conf:vendor/etc/audio_policy.conf \
-	device/moto/shamu/v4a/priv-app/ViPER4Android_FX_A4.x.apk:system/priv-app/ViPER4Android_FX_A4.x.apk
-
 PRODUCT_PROPERTY_OVERRIDES += \
     fmas.spkr_6ch=35,20,110 \
     fmas.spkr_2ch=35,25 \
