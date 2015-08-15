@@ -23,7 +23,7 @@ TARGET_CPU_VARIANT := krait
 TARGET_NO_BOOTLOADER := true
 
 # Inline kernel building
-TARGET_KERNEL_CONFIG := shamu_defconfig
+TARGET_KERNEL_CONFIG := blissful_shamu_defconfig
 TARGET_KERNEL_SOURCE := kernel/moto/shamu
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 
@@ -32,7 +32,7 @@ BOARD_KERNEL_PAGESIZE :=  2048
 BOARD_KERNEL_TAGS_OFFSET := 0x01E00000
 BOARD_RAMDISK_OFFSET     := 0x02000000
 
-BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=shamu msm_rtb.filter=0x37 ehci-hcd.park=3 utags.blkdev=/dev/block/platform/msm_sdcc.1/by-name/utags utags.backup=/dev/block/platform/msm_sdcc.1/by-name/utagsBackup coherent_pool=8M
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=shamu msm_rtb.filter=0x37 ehci-hcd.park=3 utags.blkdev=/dev/block/platform/msm_sdcc.1/by-name/utags utags.backup=/dev/block/platform/msm_sdcc.1/by-name/utagsBackup coherent_pool=8M androidboot.selinux=permissive
 
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset BOARD_RAMDISK_OFFSET --tags_offset BOARD_KERNEL_TAGS_OFFSET
 
@@ -186,3 +186,32 @@ EXTENDED_FONT_FOOTPRINT := true
 BOARD_HARDWARE_CLASS := device/moto/shamu/cmhw
 
 -include vendor/motorola/shamu/BoardConfigVendor.mk
+
+# Block_Build
+Bliss_Build_Block:=1 
+
+# Blissful building options
+BLISSIFY := true
+BLISS_O3 := true
+BLISS_GRAPHITE := true
+BLISS_STRICT := true
+BLISS_KRAIT := true
+BLISS_PIPE := true
+FLOOP_NEST_OPTIMIZE := true
+ENABLE_GCCONLY := true
+TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
+FAST_MATH := true
+ENABLE_MODULAR_O3 := true
+ENABLE_LTO := true
+Link_Time_Optimizations := true
+TARGET_USE_ION_COMPAT := true
+TARGET_USE_KRAIT_PLD_SET := true
+TARGET_TC_ROM := 5.1-linaro
+TARGET_TC_KERNEL := 6.0-linaro
+TARGET_GCC_VERSION_EXP := $(TARGET_TC_ROM)
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := $(TARGET_TC_KERNEL)
+TARGET_ENABLE_UKM := true
+
+WITH_LZMA_OTA := true
+#SaberMod
+-include vendor/bliss/config/sm.mk
