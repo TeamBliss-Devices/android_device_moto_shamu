@@ -31,8 +31,8 @@ PRODUCT_MANUFACTURER := motorola
 #PRODUCT_RESTRICT_VENDOR_FILES := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT=google/shamu/shamu:5.1.1/LMY47E/1748839:user/release-keys \
-    PRIVATE_BUILD_DESC="shamu-user 5.1.1 LMY47E 1748839 release-keys"
+    BUILD_FINGERPRINT=google/shamu/shamu:5.1.1_r13/LMY48E/1748839:user/release-keys \
+    PRIVATE_BUILD_DESC="shamu-user 5.1.1_r13 LMY48E 1748839 release-keys"
 
 $(call inherit-product, device/moto/shamu/device.mk)
 $(call inherit-product-if-exists, vendor/moto/shamu/device-vendor.mk)
