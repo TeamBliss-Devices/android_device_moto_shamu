@@ -188,7 +188,7 @@ BOARD_HARDWARE_CLASS := device/moto/shamu/cmhw
 -include vendor/motorola/shamu/BoardConfigVendor.mk
 
 # Block_Build
-Bliss_Build_Block:=1 
+Bliss_Build_Block:=1
 
 # Blissful building options
 BLISSIFY := true
@@ -212,6 +212,6 @@ TARGET_GCC_VERSION_EXP := $(TARGET_TC_ROM)
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := $(TARGET_TC_KERNEL)
 TARGET_ENABLE_UKM := true
 
-WITH_LZMA_OTA := true
+# WITH_LZMA_OTA := true
 #SaberMod
 -include vendor/bliss/config/sm.mk
