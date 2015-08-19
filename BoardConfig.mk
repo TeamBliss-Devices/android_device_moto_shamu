@@ -211,7 +211,7 @@ TARGET_TC_KERNEL := 6.0-linaro
 TARGET_GCC_VERSION_EXP := $(TARGET_TC_ROM)
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := $(TARGET_TC_KERNEL)
 TARGET_ENABLE_UKM := true
-
 WITH_LZMA_OTA := true
+
 #SaberMod
 -include vendor/bliss/config/sm.mk
