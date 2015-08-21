@@ -85,15 +85,9 @@ TARGET_USES_ION := true
 TARGET_HW_DISK_ENCRYPTION := false
 TARGET_CRYPTFS_HW_PATH := device/moto/shamu/cryptfs_hw
 
-# Enable dex-preoptimization to speed up first boot sequence
-ifeq ($(HOST_OS),linux)
-  ifeq ($(TARGET_BUILD_VARIANT),user userdebug)
-    ifeq ($(WITH_DEXPREOPT),)
-      WITH_DEXPREOPT := true
-    endif
-  endif
-endif
-WITH_DEXPREOPT_BOOT_IMG_ONLY ?= true
+WITH_DEXPREOPT := true
+WITH_DEXPREOPT_PIC :=true
+WITH_DEXPREOPT_COMP :=true
 DONT_DEXPREOPT_PREBUILTS := true
 
 TARGET_TOUCHBOOST_FREQUENCY := 1500
