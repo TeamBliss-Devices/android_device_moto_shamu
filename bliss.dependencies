@@ -1,7 +1,7 @@
 [
   {
     "remote": "github",
-    "repository": "TeamBliss-Devices/blissful_shamu_kernel",
+    "repository": "APOPHIS9283/vortex",
     "target_path": "kernel/moto/shamu",
     "revision": "lp5.1"
   }
