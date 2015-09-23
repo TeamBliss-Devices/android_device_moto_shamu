@@ -1,8 +1,8 @@
 [
   {
     "remote": "github",
-    "repository": "cyanogenmod/android_kernel_moto_shamu",
+    "repository": "TeamBliss-Devices/android_kernel_moto_shamu",
     "target_path": "kernel/moto/shamu",
-    "revision": "cm-12.1"
+    "revision": "lp5.1"
   }
 ]
