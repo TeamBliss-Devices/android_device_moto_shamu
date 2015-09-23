@@ -1,8 +1,8 @@
 [
   {
     "remote": "github",
-    "repository": "APOPHIS9283/vortex",
+    "repository": "cyanogenmod/android_kernel_moto_shamu",
     "target_path": "kernel/moto/shamu",
-    "revision": "lp5.1"
+    "revision": "cm-12.1"
   }
 ]
