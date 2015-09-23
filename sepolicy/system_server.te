@@ -13,3 +13,11 @@ allow system_server sysfs_display:file rw_file_perms;
 
 allow system_server tap2wake_dev:file rw_file_perms;
 allow system_server sysfs_vibrator:file rw_file_perms;
+
+allow system_server sweep2wake_dev:dir { search read write add_name };
+allow system_server sweep2sleep_dev:dir { search read write add_name };
+allow system_server wakegestures_dev:dir { search read write add_name };
+
+allow system_server sweep2wake_dev:file { create read write open getattr setattr };
+allow system_server sweep2sleep_dev:file { create read write open getattr setattr };
+allow system_server wakegestures_dev:file { create read write open getattr setattr };
