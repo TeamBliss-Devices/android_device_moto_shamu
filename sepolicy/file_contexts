@@ -181,5 +181,6 @@
 /system/bin/cnd                                 u:object_r:cnd_exec:s0
 
 # Kernel Tunables
+/sys/android_touch/doubletap2wake               u:object_r:doubletap2wake_dev:s0
 /sys/android_touch/sweep2wake                   u:object_r:sweep2wake_dev:s0
 /sys/android_touch/sweep2sleep                  u:object_r:sweep2sleep_dev:s0

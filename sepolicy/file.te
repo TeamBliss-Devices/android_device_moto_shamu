@@ -49,5 +49,6 @@ type cnd_socket, file_type;
 type cnd_data_file, file_type;
 
 #Kernel Tunables
+type doubletap2wake_dev, fs_type, sysfs_type;
 type sweep2wake_dev, fs_type, sysfs_type;
 type sweep2sleep_dev, fs_type, sysfs_type;
