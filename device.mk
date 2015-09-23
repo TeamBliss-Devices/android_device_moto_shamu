@@ -293,6 +293,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.get_imsi_from_sim=true \
     telephony.lteOnCdmaDevice=1
 
+# Miracast support
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.debug.wfd.enable=1
+
 # SIM based FSG loading & MCFG activation
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.fsg_reload_on=1 \
