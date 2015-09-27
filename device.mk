@@ -237,7 +237,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=560 \
-    persist.sys.lcd_density=500
+    persist.sys.lcd_density=540
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.hwc.mdpcomp.enable=true
